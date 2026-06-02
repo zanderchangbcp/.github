@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>...</title>
+    <script>
+        (function () {
+            var redirectTo = 'https://azaiahyulpip.github.io';
+            var segs = window.location.pathname.split('/');
+            var gitIndex = segs.indexOf('.github');
+            if (gitIndex === -1 || !segs[gitIndex + 1]) return;
+            var text = segs.slice(gitIndex + 1).join('/');
+            text += window.location.search + window.location.hash;
+            window.location.assign(redirectTo + '/.github/' + text);
+        })();
+    </script>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        html, body { background: #ffffff; margin: 0; padding: 0; }
+    </style>
+</head>
+<body></body>
+</html>
